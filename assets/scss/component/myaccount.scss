@@ -1,0 +1,112 @@
+.section-main {
+    .container{
+                max-width: 1170px;
+                width: 100%;
+
+            .header-description{
+
+                .breadcrumbs{
+
+                    display: inline-flex;
+                    
+                    li{
+                        a{
+                            color: #222222;
+                            font-size: 17px;
+                            font-weight: 600;
+
+                            &:hover{
+
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+      .content-title {
+                  width: 100%;
+                  font-size: 22px;
+                  font-weight: 500;
+                  line-height: 3.2;
+                  color: $color-primary;
+                  text-transform: uppercase;
+                 }
+     .myac-left-nav{
+                 ul{
+                      float: left;
+                      width: 100%;
+                      list-style: none;
+                      padding: 5px 0px;
+                      margin: 0px;
+                      border-left: 1px solid $color-primary;
+                      font-size: 17px;
+                      letter-spacing: 1px;
+                  li{ 
+                      text-align: left;
+                      position: relative;
+                        
+                   a {
+                      color: #383838;
+                      border-right: 4px solid #fff;
+                      padding: 10px 10px 10px 15px;
+                      display: block;
+                       &:hover {
+                      color: #fff;
+                      border-left: 4px solid $color-primary;
+                      background: rgba(0,0,0,0.85);
+                        }
+                      &.active {
+                      color: #fff;
+                      border-left: 4px solid $color-primary;
+                      background: rgba(0,0,0,0.85);
+                         }    
+                     }		   
+                  }
+              } 
+          } 
+  .myaccount-section{
+                      .inner-title{
+                       color: #383838;
+                      font-weight: 500;
+                      font-size: 16px;
+                      letter-spacing: 1px;
+                      margin-bottom: 10px;
+                      text-transform: uppercase;
+                    }
+  .ac-personal-info{
+                      color: #383838;
+                      letter-spacing: 1.5px;
+                      margin-top: 15px;
+                      strong {
+                      font-size: 16px;
+                      color: #383838;
+                      display: block;
+                      letter-spacing: 1.5px;
+                      text-transform: uppercase;
+                          }
+                      }	
+  .ac-personal-details {
+                      background: #f7f3ef;
+                      padding: 20px;					
+                     }
+
+                    .edit-info-btn{
+                    border: 2px solid #222222;
+
+                        &:hover{
+
+                            background-color: $color-primary;
+                        }
+                    }
+
+                    .edit-pass-btn{
+                    border: 2px solid #222222;
+
+                    &:hover{
+
+                        background-color: $color-primary;
+                    }
+                }
+                    }
+    }  	
+  }  

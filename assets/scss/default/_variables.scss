@@ -1,0 +1,94 @@
+$theme-version: 1.0.0;
+$fa-font-path : "../../webfonts";
+
+// Layout Container Grid
+$container-main: 1170px;
+
+// TYPOGRAPHY //
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,900&display=swap');
+
+
+$font-poppins: 'Poppins',sans-serif;
+$font-Droid: 'Droid Serif', serif;
+$font-Brush: 'Brush Script Std';
+$font-raleway: 'Raleway',"Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-openSans: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-roboto: 'Roboto',Helvetica,Arial,sans-serif;
+$font-sourceSansPro: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+$font-primary: $font-poppins;
+$font-secondary: $font-Brush;
+$font-tertiary: $font-raleway;
+$font-size: 14px;
+$italic: italic;
+$line-height: 1.4;
+$em-base: $font-size;
+
+
+// Ascent Colors
+$color-primary: #8a8f6a;
+$color-search: #f6f6f6;
+$color-light-black: #222222;
+
+$color-secondary: #ee6848;
+$color-tertiary: #2331f5;
+$color-details: #351f18;
+$color-sub-details: #352925;
+$color-red: #db3327;
+$color-black: #000000;
+$color-off-white: #f3f6fd;
+$color-light-blue: #22376e;
+$color-red: #db3327;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-offwhite: #e7e7e7;
+$color-gray: #666666;
+$dark-gray: #999999;
+$gray : #55595c !default;
+
+
+//
+$font-default: $font-size;
+$fontsize-p: $font-default; //14px
+$fontsize-7: $font-default+7px; //20px
+$fontsize-6: $font-default+9px; //23px
+$fontsize-5: $font-default+10px; //24px
+$fontsize-4: $fontsize-5+8px; //32px
+$fontsize-3: $fontsize-4+8px; //40px
+$fontsize-2: $fontsize-3+8px; //48px
+$fontsize-1: $fontsize-2+8px; //56px
+
+// weights
+$fw-light: 300;
+$fw-normal: 400;
+$fw-normal-2: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// COLORS //
+$font-color: $color-primary;
+
+// light version
+$light-bg: $color-white;
+$bg-primary: $color-primary;
+
+// SETTINGS //
+//Border Primary
+$border:1px solid;
+$border-2: 2px solid;
+$border-primary: #dedede;
+$border-radius: 4px;
+$border-blog: #e2e2e2;
+
+
+//Footer Color//
+$footer-main-color: #282828;
+$footer-primary-color: #8a8f6a;
+$footer-border-color: #4d4c4c;

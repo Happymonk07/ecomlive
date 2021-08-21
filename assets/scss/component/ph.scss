@@ -1,0 +1,59 @@
+#page-header{
+
+    position: relative;
+    padding-top: 130px;
+
+    .header-bg-parallax{
+
+        background: url(../images/17-2.jpg) no-repeat center center fixed !important;
+        background-size: cover !important;
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+
+            .header-description {
+                position: relative;
+                padding: 150px 0;
+
+                h1 {
+                    color: #fff;
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                    text-transform: uppercase;
+                }
+
+                .breadcrumbs {
+                    ul {
+                        li {
+                            display: inline-block;
+                            &:after {
+                                content: '/';
+                                margin: 0 10px;
+                                color: $color-white;
+                            }
+                            &:last-child {
+                                &:after {
+                                    content: none;
+                                }
+                            }
+                            a {
+                                color: $color-white;
+                                font-size: 16px;
+                                text-transform: capitalize;
+                                font-weight: $fw-normal-2;
+                                &:hover {
+                                    color: $color-primary;
+                                }
+                            }
+                            a.active {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+                //breadcrumbs				
+            }
+        }
+    }
+}

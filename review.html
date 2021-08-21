@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<head>
+    <title>orise-store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/favicon.png" type="assets/image/png">
+
+</head>
+
+
+<html>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="nav-bar" class="side-nav toggled">
+                <a class="sidebar-toggle" href="javascript:void();" id="menu-toggle"><i class="fa fa-bars"></i>menu</a>
+                <nav class="sidebar-inner sidebar-nav">
+                    <div class="close-btn text-center padding-vertical-50">
+                        <a href="javascript:void();" id="close-menu" class="close-menu"><i class="fas fa-times"></i></a>
+                    </div>
+                    <!-- /close-btn -->
+                    <ul class="sidebar-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+
+                        <li class="level-dropdown"><a href="Brand.html" title="Shop by Brands">Shop by Brands</a>
+                            <ul class="submenu text-left">
+                                <li><a href="productlist.html" title="Armani">Armani</a>
+                                </li>
+                                <li><a href="productlist.html" title="Boss">Boss</a>
+                                </li>
+                                <li><a href="productlist.html" title="Calvin Klein">Calvin Klein</a>
+                                </li>
+                                <li><a href="productlist.html" title="Denim & Co.">Denim & Co.</a>
+                                </li>
+                                <li><a href="productlist.html" title="Earth Rugs">Earth Rugs</a>
+                                </li>
+                                <li><a href="productlist.html" title="Fabiana Filippi">Fabiana Filippi</a>
+                                </li>
+                                <li><a href="productlist.html" title="Gucci">Gucci</a>
+                                </li>
+                                <li><a href="productlist.html" title="Haculla">Haculla</a>
+                                </li>
+                                <li><a href="productlist.html" title="Iceberg">Iceberg</a>
+                                </li>
+                                <li><a href="productlist.html" title="Jack & Jones">Jack & Jones</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="level-dropdown"><a href="categories.html" title="Shop by Category">Shop by Category</a>
+                            <ul class="submenu text-left">
+                                <li><a href="categories.html" title="Jackets and coats">Jackets and coats</a>
+                                </li>
+                                <li><a href="categories.html" title="Trousers and shorts">Trousers and shorts</a>
+                                </li>
+                                <li><a href="categories.html" title="Suits">Suits</a>
+                                </li>
+                                <li><a href="categories.html" title="Skirts and dresses">Skirts and dresses</a>
+                                </li>
+                                <li><a href="categories.html" title="Sweaters and waistcoats">Sweaters and waistcoats</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="level-dropdown"><a href="productlist.html" title="Accessories">Accessories</a>
+                            <ul class="submenu text-left">
+                                <li><a href="productlist.html" title="Belts">Belts</a>
+                                </li>
+                                <li><a href="productlist.html" title="Bags">Bags</a>
+                                </li>
+                                <li><a href="productlist.html" title="Hats">Hats</a>
+                                </li>
+                                <li><a href="productlist.html" title="Scarves">Scarves</a>
+                                </li>
+                                <li><a href="productlist.html" title="Sunglasses">Sunglasses</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="productlist.html" class="active">Sale</a></li>
+
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+
+                    </ul>
+
+                    <!-- /sidebar-menu -->
+
+                    <div class="menu-social mt-60 mt-sm-40">
+                        <ul>
+                            <li><a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href="https://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.pinterest.com" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- /menu-social -->
+                </nav>
+                <div class="nav-logo text-center">
+                    <a class="logo-wrapper" href="#">
+                        <img class="logo" src="assets/images/logo-dark.png" alt="">
+                    </a>
+                    <!-- /logo-wrapper -->
+                </div>
+
+                <div class="pull-right">
+                    <div class="right-nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="ti-search" id="search-trigger"><i class="fa fa-search"></i></a>
+                                <form action="#" id="search" method="get">
+                                    <div class="input">
+                                        <div class="container">
+                                            <input class="search" placeholder="Search for products..." type="text">
+                                            <button class="submit" type="submit" value="close"><i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button class="icon_close" id="close" type="reset"><i class="fas fa-times"></i></button>
+                                </form>
+                            </li>
+
+                            <li>
+                                <a href="#" class="side-cart-toggle"><i class="fas fa-shopping-bag"></i>
+                                            <span class="notice-num">1</span>
+                                        </a>
+
+                                <div class="side-cart">
+                                    <div class="close-btn text-center pt-30 pt-sm-20 pb-30 pb-sm-20">
+                                        <a href="#" class="close-cart"><i class="fas fa-times"></i></a>
+                                    </div>
+                                    <!-- /close-btn -->
+
+                                    <div class="shoping-cart-box">
+                                        <div class="cart-product-list pb-20">
+                                            <div class="cart-product">
+                                                <a href="#"><img src="assets/images/9.jpg" alt="">
+                                                </a>
+                                                <div class="cart-product-info">
+                                                    <div class="product-name">
+                                                        <a href="Product-detail.html">Black Cotton Leggings</a>
+                                                    </div>
+                                                    <!-- /product-name -->
+                                                    <div class="product-atributes padding-vertical-15">
+                                                        <span class="quantity">Qty: 02</span>
+                                                    </div>
+                                                    <!-- /product-atributes -->
+                                                    <div class="product-price">
+                                                        <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                                    </div>
+                                                    <!-- /product-price -->
+                                                    <a href="#" class="remove-btn"><i class="fas fa-times"></i></a>
+                                                </div>
+                                                <!-- /cart-product-info -->
+                                            </div>
+                                        </div>
+                                        <div class="cart-prices pt-30">
+                                            <div class="shipping">
+                                                <span class="shipping-text">Shipping :</span>
+                                                <span class="product-price pull-right"><i class="fas fa-dollar-sign"></i> 20.00</span>
+                                            </div>
+                                            <!-- /shipping -->
+                                            <div class="total-price pt-15">
+                                                <span class="price-text">Total :</span>
+                                                <span class="product-price pull-right"><i class="fas fa-dollar-sign"></i>160.00</span>
+                                            </div>
+                                            <!-- /total-price -->
+                                        </div>
+                                        <!-- /cart-prices -->
+                                        <div class="cart-buttons mt-30">
+                                            <a href="#" class="shopping-cart-btn">View Cart</a>
+                                            <a href="#" class="checkout-btn mt-20">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <div class="section-main tabs pb-30 pt-50" id="page-header">
+        <div class="container pt-20">
+            <div class="row">
+                <div class="col-sm-12 header-description">
+                    <div class="pl-30">
+                        <ul class="breadcrumbs">
+                            <li><a href="home.html">Home /</a></li>
+                            <li><a href="myaccount.html">&nbsp; Account Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-12 col-xs-12 text-center pb-20">
+                    <span class="content-title">My Review</span>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-xs-12 myaccount-content checkout-content">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12 myac-left-nav">
+                        <ul>
+                            <li><a title="Account Setting" href="myaccount.html">Account Setting</a></li>
+                            <li><a title="My Wishlist" href="wish.html">My Wishlist</a></li>
+                            <li><a title="My Order" href="order.html">My Orders</a></li>
+                            <li><a title="My Review" href="review.html">My Review</a></li>
+                            <li><a title="My Return" href="return.html">My Returns</a></li>
+                            <li><a title="Logout" href="home.html">Logout</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="tab3" class="tab" style="display: block;">
+                            <div class="customer-comment-box">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="customer-comment">
+                                            <div class="customer-comment-name">Jeff Bejos</div>
+                                            <div class="customer-comment-verified">VERIFIED PURCHASE</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 customer-comment-box-outer">
+                                        <div class="customer-ratings">
+                                            <div class="customer-comment-reviews">
+                                                <span>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star "></i>
+                                                </span>
+                                            </div>
+                                            <div class="date">10/07/2019</div>
+                                        </div>
+                                        <div class="customer-comment-box1">
+                                            The Clothes were good at a good price.
+                                        </div>
+                                        <div class="customer-comment-text">
+                                            <div>1 out of 2 Found This Helpful</div>
+                                            Was This Helpful?
+                                            <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                            <span>Or</span>
+                                            <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="customer-comment-box">
+                                    <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="customer-comment">
+                                            <div class="customer-comment-name">Jack Maa</div>
+                                            <div class="customer-comment-verified">VERIFIED PURCHASE</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 customer-comment-box-outer">
+                                        <div class="customer-ratings">
+                                            <div class="customer-comment-reviews">
+                                                <span>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star "></i>
+                                                </span>
+                                            </div>
+                                            <div class="date">09/25/2019</div>
+                                        </div>
+                                        <div class="customer-comment-box1">
+                                            Love The Way of Delivery Of this Product.. Value for the Price
+                                        </div>
+                                        <div class="customer-comment-text">
+                                            <div>1 out of 2 Found This Helpful</div>
+                                            Was This Helpful?
+                                            <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                            <span>Or</span>
+                                            <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /tab -->
+                    </div>
+                    <!-- /tab-content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Footer Start-->
+    <footer class="footer-one ">
+        <div class="container text-center ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="footer-social ">
+                        <ul>
+                            <li><a href="javascript:void() " title="Facebook ">Facebook</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Twitter ">Twitter</a>
+                            </li>
+                            <li><a href="javascript:void() " title="LinkedIn ">LinkedIn</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Google+ ">Google+</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Instagram ">Instagram</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Skype ">Skype</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /footer-social -->
+
+                    <div class="logo-footer ">
+                        <img src="assets/images/logo.png " alt="logo " title="brand logo ">
+                    </div>
+                    <!-- /logo-footer -->
+
+                    <div class="footer-nav ">
+                        <ul>
+                            <li><a href="javascript:void() " title="About us ">About us</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Return Policy ">Return Policy</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Shipping Policy ">Shipping Policy</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Contact us ">Contact us</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Site Map ">Site Map</a>
+                            </li>
+                            <li><a href="javascript:void() " title="Order Tracking ">Order Tracking</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- /footer-nav -->
+
+                    <div class="footer-payments mt-50 mt-sm-25 ">
+                        <ul>
+                            <li><img src="assets/images/visa.png " alt="Visa card " title="visacard ">
+                            </li>
+                            <li><img src="assets/images/mastercard.png " alt="mastercard " title="mastercard ">
+                            </li>
+                            <li><img src="assets/images/discover.png " alt="discover " title="discover ">
+                            </li>
+                            <li><img src="assets/images/americanexpress.png " alt="americanexpress " title="americanexpress ">
+                            </li>
+                            <li><img src="assets/images/paypal.png " alt="paypal " title="paypal ">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /footer-payments -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+        <div class="copyright-info pt-30 pb-30 text-center ">
+            <span class="ft-desc ">© 2020 Orise-Store, All Rights Reserved</span>
+        </div>
+        <!-- /copyrights-info -->
+    </footer>
+
+    <!-- Footer End -->
+
+
+    <script type="text/javascript " src="assets/js/jquery-3.4.1.min.js "></script>
+    <script type="text/javascript " src="assets/js/popper.min.js "></script>
+    <script type="text/javascript " src="assets/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="assets/js/custom.js "></script>
+
+
+
+</body>
+
+</html>

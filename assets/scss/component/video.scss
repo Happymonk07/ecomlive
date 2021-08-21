@@ -1,0 +1,62 @@
+#vl-box {
+
+    background: url(../images/video-lightbox-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    margin-top: 70px;
+
+
+    @include screen(md, max){
+
+        background: url(../images/video-lightbox-bg.jpg) no-repeat center;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        margin-top: 70px;
+    }
+
+    .white-overlay {
+        background: 
+        rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        right: 30px;
+        bottom: 35px;
+    }
+
+    .container {
+        padding: 160px 0;
+        z-index: 1;
+        position: relative;
+        @include screen (md, max) {
+                   padding: 120px 0;
+                   }	
+        
+    }
+
+    .video-box {
+            .awesome {
+                        font-size: 40px;
+                        display:block;
+                        text-transform: uppercase;
+                       @include screen (md, max) {
+                                font-size: 20px;
+                                line-height: 2.0;
+                   }	
+            }
+
+            span{
+                font-size: 18px;
+                padding: 20px;
+                font-family: 'Droid Serif', serif;
+                font-style: italic;
+                 @include screen (md, max) {
+                                font-size: $font-size;
+                                   padding: 10px;
+                   }	
+                
+            }
+        }
+}

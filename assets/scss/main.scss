@@ -1,0 +1,40 @@
+/*
+ * Name:        eCommerce Demo
+ * Written by: 	eCommerce Demo Team - (http://ecommerce-demo.com)
+ * Version:     1.0.0
+*/
+
+/* Common and Vendors*/
+@import 'bootstrap/bootstrap';
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
+@import 'fontawesome/regular';
+@import 'default/_variables';
+@import 'default/mixin';
+@import 'base/base';
+@import 'header/_header01';
+@import 'component/slider';
+@import 'component/newproducts';
+@import 'component/featuredproducts';
+@import 'component/bestsellerproduct';
+@import 'component/blog';
+@import 'component/slidebar';
+@import 'component/testimonials';
+@import 'component/video';
+@import 'component/popup';
+@import 'component/ph';
+@import'component/banner';
+@import'component/Contactform';
+@import'component/brand';
+@import'component/shop';
+@import'component/pd';
+@import'component/tabs';
+@import'component/productlist';
+@import'component/shopping-cart';
+@import'component/myaccount';
+@import 'footer/_footer01';
+@import 'slick/slick';
+@import 'slick/slick-theme';
+@import 'base/shortcodes';
+@import 'base/form';

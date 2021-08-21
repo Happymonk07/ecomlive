@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+
+<head>
+    <title>orise-store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/favicon.png" type="assets/image/png">
+</head>
+<html>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="nav-bar" class="side-nav toggled">
+                <a class="sidebar-toggle" href="javascript:void();" id="menu-toggle"><i class="fa fa-bars"></i>menu</a>
+                <nav class="sidebar-inner sidebar-nav">
+                    <div class="close-btn text-center padding-vertical-50">
+                        <a href="javascript:void();" id="close-menu" class="close-menu"><i class="fas fa-times"></i></a>
+                    </div>
+                    <!-- /close-btn -->
+                    <ul class="sidebar-menu">
+                        <li><a href="home.html" class="active">Home</a></li>
+
+                        <li class="level-dropdown"><a href="Brand.html" title="Shop by Brands">Shop by Brands</a>
+                            <ul class="submenu text-left">
+                                <li><a href="productlist.html" title="Armani">Armani</a>
+                                </li>
+                                <li><a href="productlist.html" title="Boss">Boss</a>
+                                </li>
+                                <li><a href="productlist.html" title="Calvin Klein">Calvin Klein</a>
+                                </li>
+                                <li><a href="productlist.html" title="Denim & Co.">Denim & Co.</a>
+                                </li>
+                                <li><a href="productlist.html" title="Earth Rugs">Earth Rugs</a>
+                                </li>
+                                <li><a href="productlist.html" title="Fabiana Filippi">Fabiana Filippi</a>
+                                </li>
+                                <li><a href="productlist.html" title="Gucci">Gucci</a>
+                                </li>
+                                <li><a href="productlist.html" title="Haculla">Haculla</a>
+                                </li>
+                                <li><a href="productlist.html" title="Iceberg">Iceberg</a>
+                                </li>
+                                <li><a href="productlist.html" title="Jack & Jones">Jack & Jones</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="level-dropdown"><a href="categories.html" title="Shop by Category">Shop by Category</a>
+                            <ul class="submenu text-left">
+                                <li><a href="categories.html" title="Jackets and coats">Jackets and coats</a>
+                                </li>
+                                <li><a href="categories.html" title="Trousers and shorts">Trousers and shorts</a>
+                                </li>
+                                <li><a href="categories.html" title="Suits">Suits</a>
+                                </li>
+                                <li><a href="categories.html" title="Skirts and dresses">Skirts and dresses</a>
+                                </li>
+                                <li><a href="categories.html" title="Sweaters and waistcoats">Sweaters and waistcoats</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="level-dropdown"><a href="productlist.html" title="Accessories">Accessories</a>
+                            <ul class="submenu text-left">
+                                <li><a href="productlist.html" title="Belts">Belts</a>
+                                </li>
+                                <li><a href="productlist.html" title="Bags">Bags</a>
+                                </li>
+                                <li><a href="productlist.html" title="Hats">Hats</a>
+                                </li>
+                                <li><a href="productlist.html" title="Scarves">Scarves</a>
+                                </li>
+                                <li><a href="productlist.html" title="Sunglasses">Sunglasses</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="productlist.html" class="active">Sale</a></li>
+
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+
+                    </ul>
+
+                    <!-- /sidebar-menu -->
+
+                    <div class="menu-social mt-60 mt-sm-40">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- /menu-social -->
+                </nav>
+                <div class="nav-logo text-center">
+                    <a class="logo-wrapper" href="home.html">
+                        <img class="logo" src="assets/images/logo-dark.png" alt="">
+                    </a>
+                    <!-- /logo-wrapper -->
+                </div>
+
+                <div class="pull-right">
+                    <div class="right-nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="ti-search" id="search-trigger"><i class="fa fa-search"></i></a>
+                                <form action="#" id="search" method="get">
+                                    <div class="input">
+                                        <div class="container">
+                                            <input class="search" placeholder="Search for products..." type="text">
+                                            <button class="submit" type="submit" value="close"><i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button class="icon_close" id="close" type="reset"><i class="fas fa-times"></i></button>
+                                </form>
+                            </li>
+                            
+                            <li>
+                                <a href="" class="user" title="UserLogin" data-toggle="modal" data-target="#UserModal"><i class="fas fa-user"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="side-cart-toggle"><i class="fas fa-shopping-bag"></i>
+                                    <span class="notice-num">1</span>
+                                </a>
+
+                                <div class="side-cart">
+                                    <div class="close-btn text-center pt-30 pt-sm-20 pb-30 pb-sm-20">
+                                        <a href="#" class="close-cart"><i class="fas fa-times"></i></a>
+                                    </div>
+                                    <!-- /close-btn -->
+
+                                    <div class="shoping-cart-box">
+                                        <div class="cart-product-list pb-20">
+                                            <div class="cart-product">
+                                                <a href="#"><img src="assets/images/9.jpg" alt="">
+                                                </a>
+                                                <div class="cart-product-info">
+                                                    <div class="product-name">
+                                                        <a href="Product-detail.html">Black Cotton Leggings</a>
+                                                    </div>
+                                                    <!-- /product-name -->
+                                                    <div class="product-atributes padding-vertical-15">
+                                                        <span class="quantity">Qty: 02</span>
+                                                    </div>
+                                                    <!-- /product-atributes -->
+                                                    <div class="product-price">
+                                                        <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                                    </div>
+                                                    <!-- /product-price -->
+                                                    <a href="#" class="remove-btn"><i class="fas fa-times"></i></a>
+                                                </div>
+                                                <!-- /cart-product-info -->
+                                            </div>
+                                        </div>
+                                        <div class="cart-prices pt-30">
+                                            <div class="shipping">
+                                                <span class="shipping-text">Shipping :</span>
+                                                <span class="product-price pull-right"><i class="fas fa-dollar-sign"></i> 20.00</span>
+                                            </div>
+                                            <!-- /shipping -->
+                                            <div class="total-price pt-15">
+                                                <span class="price-text">Total :</span>
+                                                <span class="product-price pull-right"><i class="fas fa-dollar-sign"></i>160.00</span>
+                                            </div>
+                                            <!-- /total-price -->
+                                        </div>
+                                        <!-- /cart-prices -->
+                                        <div class="cart-buttons mt-30">
+                                            <a href="#" class="shopping-cart-btn">Shopping Cart</a>
+                                            <a href="#" class="checkout-btn margin-top-25">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- carousel begin -->
+
+    <div id="carousel">
+        <ul class="banner-slick">
+            <li class="slide1">
+                <div class="slider-caption slider-caption-1 sl-line">
+                    <div class="caption">
+                        <span class="small-heading">New T-shirt</span>
+                        <h2 class="big-heading">Clothing for Men's</h2>
+                        <span>Claritas est etiam processus dynamicus, qui sequitur mutatio-nem consuetudium lectorum.</span>
+                        <a href="#" class="button mt-30">View Collection</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="slide2">
+                <div class="slider-caption slider-caption-2 sl-line">
+                    <div class="caption">
+                        <span class="small-heading">New arrivals</span>
+                        <h2 class="big-heading">Design 2017</h2>
+                        <span>Claritas est etiam processus dynamicus, qui sequitur mutatio-nem consuetudium lectorum.</span>
+                        <a href="#" class="button mt-30">View Collection</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="slide3">
+                <div class="slider-caption slider-caption-3 sl-line">
+                    <div class="caption">
+                        <h1 class="big-heading">Life style that you need, Yo.</h1>
+                        <span>Claritas est etiam processus dynamicus, qui sequitur mutatio-nem consuetudium lectorum.</span>
+                        <a href="#" class="button mt-30">View Collection</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- carousel End -->
+
+
+
+    <!-- New Products Begin -->
+
+    <div id="new-products">
+        <div class="container text-center pt-100 pt-md-50 pt-sm-25 pb-100 pb-md-50 pb-sm-25">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 new-product-1 mt-50">
+                    <div class="product">
+                        <img src="assets/images/16.jpg" class="image" alt="">
+                        <div class="overlay">
+                            <div class="hover-search">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info pt-20 pt-sm-5 pb-20 pb-sm-5">
+                        <span class="product-tags">Shop / Hand bag for men</span>
+                        <h4>Vintage Canvas Mens Fanny</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 new-product-2">
+                    <div class="product-info pb-20">
+                        <span class="product-tags">Clothing / T-shirt</span>
+                        <h4>Aime Leon Dore Pre Fall Lookbook</h4>
+                    </div>
+                    <div class="product">
+                        <img src="assets/images/17.jpg" class="image" alt="">
+                        <div class="overlay">
+                            <div class="hover-search">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 new-product-3">
+                    <div class="product">
+                        <img src="assets/images/12.jpg" class="image" alt="">
+                        <div class="overlay">
+                            <div class="hover-search">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info pt-20 pb-20">
+                        <span class="product-tags">Shop / Clothing for men</span>
+                        <h4>Comprar Love Moschino Primavera</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Products End -->
+
+
+    <!-- Featured Products Begin-->
+
+    <div id="featured-products">
+        <div class="container pb-100 text-center">
+            <div class="double-line"><span class="main-title">Featured Products</span></div>
+            <span class="sub-title">Eodem modo typi, qui nunc nobis videntur parum clari</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-carousel pr-carousel pt-50">
+
+                        <div class="item">
+                            <div class="product-image">
+                                <img src="assets/images/2.jpg" alt="">
+                                <div class="product_overlay">
+                                    <div class="product-cart">
+                                        <a class="add" href="#">+ Add to card</a>
+                                        <div class="product-icons">
+                                            <ul>
+                                                <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                </li>
+                                                <li class="icon-bg-color"><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                </li>
+                                                <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-short-detail pt-20">
+                                <div class="product-title">
+                                    <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                        </span>
+                                </div>
+
+                                <div class="product-price">
+                                    <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                </div>
+
+                                <div class="product-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="product-image">
+                                <img src="assets/images/7.jpg" alt="">
+                                <div class="product_overlay">
+                                    <div class="product-cart">
+                                        <a class="add" href="#">+ Add to card</a>
+                                        <div class="product-icons">
+                                            <ul>
+                                                <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                </li>
+                                                <li class="icon-bg-color"><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                </li>
+                                                <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /product-icons -->
+                                    </div>
+                                    <!-- /product-cart -->
+                                </div>
+                                <!-- /product_overlay -->
+                            </div>
+                            <!-- /product-image -->
+                            <div class="product-short-detail pt-20">
+
+                                <div class="product-title">
+                                    <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                    </span>
+                                </div>
+                                <!-- /product-title -->
+                                <div class="product-price">
+                                    <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                    <del class="d-none d-md-block d-lg-block"><i class="fas fa-dollar-sign"></i>130.00</del>
+                                </div>
+                                <!-- /product-price -->
+                                <div class="product-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <!-- /product-rate -->
+                            </div>
+                            <!-- /product-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product-image">
+                                <img src="assets/images/3.jpg" alt="">
+                                <div class="product_overlay">
+                                    <div class="product-cart">
+                                        <a class="add" href="#">+ Add to card</a>
+                                        <div class="product-icons">
+                                            <ul>
+                                                <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                </li>
+                                                <li class="icon-bg-color"><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                </li>
+                                                <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /product-icons -->
+                                    </div>
+                                    <!-- /product-cart -->
+                                </div>
+                                <!-- /product_overlay -->
+                            </div>
+                            <!-- /product-image -->
+                            <div class="product-short-detail pt-20">
+
+                                <!-- /product-rate -->
+                                <div class="product-title">
+                                    <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                    </span>
+                                </div>
+                                <!-- /product-title -->
+                                <div class="product-price">
+                                    <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                </div>
+                                <!-- /product-price -->
+                                <div class="product-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                            </div>
+                            <!-- /product-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product-image">
+                                <img src="assets/images/9.jpg" alt="">
+                                <div class="product_overlay">
+                                    <div class="product-cart">
+                                        <a class="add" href="#">+ Add to card</a>
+                                        <div class="product-icons">
+                                            <ul>
+                                                <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                </li>
+                                                <li class="icon-bg-color"><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                </li>
+                                                <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /product-icons -->
+                                    </div>
+                                    <!-- /product-cart -->
+                                </div>
+                                <!-- /product_overlay -->
+                            </div>
+                            <!-- /product-image -->
+                            <div class="product-short-detail pt-20">
+
+                                <div class="product-title">
+                                    <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                    </span>
+                                </div>
+                                <!-- /product-title -->
+                                <div class="product-price``````````````````````````````````````````````````````````">
+                                    <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                </div>
+                                <!-- /product-price -->
+                                <div class="product-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                                <!-- /product-rate -->
+                            </div>
+                            <!-- /product-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product-image">
+                                <img src="assets/images/11.jpg" alt="">
+                                <div class="product_overlay">
+                                    <div class="product-cart">
+                                        <a class="add" href="#">+ Add to card</a>
+                                        <div class="product-icons">
+                                            <ul>
+                                                <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                </li>
+                                                <li class="icon-bg-color"><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                </li>
+                                                <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /product-icons -->
+                                    </div>
+                                    <!-- /product-cart -->
+                                </div>
+                                <!-- /product_overlay -->
+                            </div>
+                            <!-- /product-image -->
+                            <div class="product-short-detail pt-20">
+
+                                <div class="product-title">
+                                    <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                    </span>
+                                </div>
+                                <!-- /product-title -->
+                                <div class="product-price">
+                                    <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                    <del class="d-none d-md-block d-lg-block"><i class="fas fa-dollar-sign"></i>130.00</del>
+                                </div>
+                                <!-- /product-price -->
+
+                                <div class="product-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                                <!-- /product-rate -->
+                            </div>
+                            <!-- /product-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product-image">
+                                <img src="assets/images/4.jpg" alt="">
+                                <div class="product_overlay">
+                                    <div class="product-cart">
+                                        <a class="add" href="#">+ Add to card</a>
+                                        <div class="product-icons">
+                                            <ul>
+                                                <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                </li>
+                                                <li class="icon-bg-color"><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                </li>
+                                                <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-short-detail pt-20">
+
+                                <div class="product-title">
+                                    <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                    </span>
+                                </div>
+                                <div class="product-price">
+                                    <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products End -->
+
+
+    <!-- Video LightBox Begin -->
+
+    <div id="vl-box">
+        <div class="white-overlay"></div>
+        <div class="container text-center">
+            <div class="video-box">
+                <a href="https://vimeo.com/21294655" class="play-button" target="_blank"><img src="assets/images/video-play-icon.png" alt="" />
+                </a>
+                <span class="awesome">Awesome Video LightBox</span>
+                <span>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</span>
+            </div>
+            <!-- /video box -->
+        </div>
+        <!-- /container -->
+    </div>
+
+    <!-- Video LightBox End -->
+
+    <!-- Best Seller Begin -->
+
+    <div class="best-seller pt-100 pt-md-50 pt-sm-30 pb-100 pb-md-50 pb-sm-30">
+        <div class="container text-center mt-70">
+            <div class="double-line"><span class="main-title">BestSeller Products</span></div>
+            <span class="sub-title pt-5">Eodem modo typi, qui nunc nobis videntur parum clari</span>
+                    <div class="row pt-60 pt-md-20">
+                        <div class="col-6 col-md-3 change-view">
+                            <div class="best-product">
+                                <div class="product-image">
+                                    <img src="assets/images/1.jpg" alt="">
+                                    <div class="product_overlay">
+                                        <div class="product-cart">
+                                            <a href="#">
+                                                <span>+ Add to card</span>
+                                            </a>
+                                            <div class="product-icons">
+                                                <ul>
+                                                    <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="far fa-eye"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /product-icons -->
+                                        </div>
+                                        <!-- /product-cart -->
+                                    </div>
+                                    <!-- /product_overlay -->
+                                </div>
+                                <!-- /product-image -->
+                                <div class="product-short-detail pt-20">
+
+                                    <div class="product-title">
+                                        <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                        </span>
+                                    </div>
+                                    <!-- /product-title -->
+                                    <div class="product-price">
+                                        <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                    </div>
+                                    <!-- /product-price -->
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star "></i>
+                                    </div>
+                                    <!-- /product-rate -->
+                                </div>
+                                <!-- / -->
+                            </div>
+                        </div>
+                        <!-- /best-product -->
+                        <div class="col-6 col-md-3 change-view">
+                            <div class="best-product">
+                                <div class="product-image">
+                                    <img src="assets/images/6.jpg" alt="">
+                                    <div class="product_overlay">
+                                        <div class="product-cart">
+                                            <a href="#">
+                                                <span>+ Add to card</span>
+                                            </a>
+                                            <div class="product-icons">
+                                                <ul>
+                                                    <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="far fa-eye"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /product-icons -->
+                                        </div>
+                                        <!-- /product-cart -->
+                                    </div>
+                                    <!-- /product_overlay -->
+                                </div>
+                                <!-- /product-image -->
+                                <div class="product-short-detail pt-20">
+
+                                    <!-- /product-rate -->
+                                    <div class="product-title">
+                                        <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                        </span>
+                                    </div>
+                                    <!-- /product-title -->
+                                    <div class="product-price">
+                                        <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                        <del class="d-none"><i class="fas fa-dollar-sign"></i>130.00</del>
+                                    </div>
+                                    <!-- /product-price -->
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star "></i>
+                                    </div>
+                                </div>
+                                <!-- / -->
+                            </div>
+                            <!-- /best-product -->
+                        </div>
+                        <!-- /column -->
+
+                        <div class="col-md-6 poster poster-1">
+                            <img src="assets/images/10.jpg" class="poster-img" alt="" />
+                            <div class="poster-content ml-50 mr-50">
+                                <img src="assets/images/poster-icon1.png" alt="" />
+                                <h1>wasted heroes do or die t-shirt</h1>
+                            </div>
+                            <!-- /poster-content -->
+                        </div>
+                        <!-- /poster -->
+
+                        <div class="col-md-6 poster poster-2">
+                            <img src="assets/images/11(2).jpg" class="poster-img" alt="" />
+                            <div class="poster-content ml-30 mr-30">
+                                <img src="assets/images/poster-icon2.png" alt="" />
+                                <h1>anime tattoo girl model fashion</h1>
+                            </div>
+                            <!-- /poster-content -->
+                        </div>
+                        <!-- /poster -->
+
+                        <div class="col-6 col-md-3 pt-30 pt-sm-15 change-view">
+                            <div class="best-product">
+                                <div class="product-image">
+                                    <img src="assets/images/8.jpg" alt="">
+                                    <div class="product_overlay">
+                                        <div class="product-cart">
+                                            <a href="#">
+                                                <span>+ Add to card</span>
+                                            </a>
+                                            <div class="product-icons">
+                                                <ul>
+                                                    <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="far fa-eye"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /product-icons -->
+                                        </div>
+                                        <!-- /product-cart -->
+                                    </div>
+                                    <!-- /product_overlay -->
+                                </div>
+                                <!-- /product-image -->
+                                <div class="product-short-detail pt-20">
+
+                                    <div class="product-title">
+                                        <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                        </span>
+                                    </div>
+                                    <!-- /product-title -->
+                                    <div class="product-price">
+                                        <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                    </div>
+                                    <!-- /product-price -->
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star "></i>
+                                    </div>
+                                    <!-- /product-rate -->
+                                </div>
+                                <!-- / -->
+                            </div>
+                        </div>
+                        <!-- /best-product -->
+                        <div class="col-6 col-md-3 pt-30 pt-sm-15 change-view">
+                            <div class="best-product">
+                                <div class="product-image">
+                                    <img src="assets/images/12(2).jpg" alt="">
+                                    <div class="product_overlay">
+                                        <div class="product-cart">
+                                            <a href="#">
+                                                <span>+ Add to card</span>
+                                            </a>
+                                            <div class="product-icons">
+                                                <ul>
+                                                    <li><a href="#" title="favourite"><i class="far fa-heart"></i></a>
+                                                    </li>
+                                                    <li><a href="#" title="compare"><i class="fas fa-sliders-h"></i></a>
+                                                    </li>
+                                                    <li><a href="#" class="product-quick-view" title="Quick View" data-toggle="modal" data-target="#QVModal"><i class="fas fa-eye"></i></a>                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /product-icons -->
+                                        </div>
+                                        <!-- /product-cart -->
+                                    </div>
+                                    <!-- /product_overlay -->
+                                </div>
+                                <!-- /product-image -->
+                                <div class="product-short-detail pt-20">
+
+                                    <div class="product-title">
+                                        <span><a href="Product-detail.html">Black Cotton Leggings</a>
+                                        </span>
+                                    </div>
+                                    <!-- /product-title -->
+                                    <div class="product-price">
+                                        <span><i class="fas fa-dollar-sign"></i>160.00</span>
+                                        <del class="d-none"><i class="fas fa-dollar-sign"></i>130.00</del>
+                                    </div>
+                                    <!-- /product-price -->
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <!-- /product-rate -->
+                                </div>
+                                <!-- / -->
+                            </div>
+                            <!-- /best-product -->
+                        </div>
+                </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+
+    <!-- Best Seller End -->
+
+    <!-- blog start    -->
+    <div class="blog-latest pt-sm-20">
+        <div class="container text-center mt-70">
+            <div class="double-line"><span class="main-title">Latest From Blog</span></div>
+            <span class="sub-title">Eodem modo typi, qui nunc nobis videntur parum clari</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="blog-carousel">
+                        <div class="item">
+                            <div class="product">
+                                <img src="assets/images/8(1).jpg" class="img-responsive" alt="latest from blog">
+                                <div class="hover_overlay">
+                                    <div class="hover-search">
+                                        <a href="#"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <!-- /hover_overlay -->
+                            </div>
+                            <div class="blog-short-detail">
+                                <div class="post-title">
+                                    <span><a href="#">Recent Tattoos By Luke Wessman</a>
+                                    </span>
+                                </div>
+                                <!-- /post-title -->
+                                <div class="post-info">
+                                    <span>By <a href="#">Erentheme</a> / July 11, 2016</span>
+                                </div>
+                                <!-- /post-info -->
+                            </div>
+                            <!-- /blog-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product">
+                                <img src="assets/images/9(2).jpg" class="img-responsive" alt="latest from blog">
+                                <div class="hover_overlay">
+                                    <div class="hover-search">
+                                        <a href="#"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <!-- /hover_overlay -->
+                            </div>
+                            <div class="blog-short-detail">
+                                <div class="post-title padding-vertical-10">
+                                    <span><a href="#">American Style PF Flyers Luke</a>
+                                    </span>
+                                </div>
+                                <!-- /post-title -->
+                                <div class="post-info">
+                                    <span>By <a href="#">Erentheme</a> / July 11, 2016</span>
+                                </div>
+                                <!-- /post-info -->
+                            </div>
+                            <!-- /blog-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product">
+                                <img src="assets/images/3(2).jpg" class="img-responsive" alt="latest from blog">
+                                <div class="hover_overlay">
+                                    <div class="hover-search">
+                                        <a href="#"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <!-- /hover_overlay -->
+                            </div>
+                            <div class="blog-short-detail">
+                                <div class="post-title">
+                                    <span><a href="#">American Style PF Flyers Luke</a>
+                                    </span>
+                                </div>
+                                <!-- /post-title -->
+                                <div class="post-info">
+                                    <span>By <a href="#">Erentheme</a> / July 11, 2016</span>
+                                </div>
+                                <!-- /post-info -->
+                            </div>
+                            <!-- /blog-short-detail -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="product">
+                                <img src="assets/images/7(2).jpg" class="img-responsive" alt="latest from blog">
+                                <div class="hover_overlay">
+                                    <div class="hover-search">
+                                        <a href="#"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                                <!-- /hover_overlay -->
+                            </div>
+                            <div class="blog-short-detail">
+                                <div class="post-title">
+                                    <span><a href="#">American Style PF Flyers Luke</a>
+                                    </span>
+                                </div>
+                                <!-- /post-title -->
+                                <div class="post-info">
+                                    <span>By <a href="#">Erentheme</a> / July 11, 2016</span>
+                                </div>
+                                <!-- /post-info -->
+                            </div>
+                            <!-- /blog-short-detail -->
+                        </div>
+                        <!-- /item -->
+                    </div>
+                    <!-- /blog-carousel -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Testimonials Start -->
+
+    <div class="testimonials">
+        <div class="overlay">
+            <div class="container text-center pt-100 pt-md-50 pt-sm-25 pb-100 pb-md-50 pb-sm-25 pb-xs-20">
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="fas fa-quote-right"></i>
+                        <ul class="testimonial-slider pt-20 pt-md-10">
+                            <li>
+                                <span>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur
+                                    mutationem consuetudium lectorum. Mirum est notare quam littera gothica.</span>
+                                <div class="client-info pb-10 pb-sm-5">
+                                        <span class="text-white">Michel Smith</span>
+                                        <small>Web Developer</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur
+                                    mutationem consuetudium lectorum. Mirum est notare quam littera gothica.</span>
+                                <div class="client-info pb-10 pb-sm-5">
+                                        <span class="text-white">Michel Smith</span>
+                                        <small>Web Developer</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur
+                                    mutationem consuetudium lectorum. Mirum est notare quam littera gothica.</span>
+                                <div class="client-info pb-10 pb-sm-5">
+                                        <span class="text-white">Michel Smith</span>
+                                        <small>Web Developer</small>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- /bxslider -->
+                    </div>
+                    <!-- /column -->
+
+                    <div class="clients col-md-12 mt-50 mt-sm-25">
+                        <div class="item">
+                            <img src="assets/images/client1.png" alt="client1" title="client1">
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/images/client2.png" alt="client2" title="client2">
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/images/client3.png" alt="client3" title="client3">
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/images/client4.png" alt="client4" title="client4">
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/images/client5.png" alt="client5" title="client5">
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/images/client1.png" alt="client1" title="client1">
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/images/client2.png" alt="client2" title="client2">
+                        </div>
+                    </div>
+                    <!-- /clients -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- overlay -->
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start-->
+    <footer class="footer-one">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="javascript:void()" title="Facebook">Facebook</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Twitter">Twitter</a>
+                            </li>
+                            <li><a href="javascript:void()" title="LinkedIn">LinkedIn</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Google+">Google+</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Instagram">Instagram</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Skype">Skype</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /footer-social -->
+
+                    <div class="logo-footer">
+                        <img src="assets/images/logo.png" alt="logo" title="brand logo">
+                    </div>
+                    <!-- /logo-footer -->
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="javascript:void()" title="About us">About us</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Return Policy">Return Policy</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Shipping Policy">Shipping Policy</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Contact us">Contact us</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Site Map">Site Map</a>
+                            </li>
+                            <li><a href="javascript:void()" title="Order Tracking">Order Tracking</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- /footer-nav -->
+
+                    <div class="footer-payments mt-50 mt-sm-25">
+                        <ul>
+                            <li><img src="assets/images/visa.png" alt="Visa card" title="visacard">
+                            </li>
+                            <li><img src="assets/images/mastercard.png" alt="mastercard" title="mastercard">
+                            </li>
+                            <li><img src="assets/images/discover.png" alt="discover" title="discover">
+                            </li>
+                            <li><img src="assets/images/americanexpress.png" alt="americanexpress" title="americanexpress">
+                            </li>
+                            <li><img src="assets/images/paypal.png" alt="paypal" title="paypal">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /footer-payments -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+        <div class="copyright-info pt-30 pb-30 text-center">
+            <span class="ft-desc">© 2020 Orise-Store, All Rights Reserved</span>
+        </div>
+        <!-- /copyrights-info -->
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- model start  -->
+    <div class="modal" id="QVModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quick View</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-5 ">
+                            <div class="w-100">
+                                <img src="assets/images/2.jpg" alt="" />
+                            </div>
+                            <div>
+                                <ul class="more-images">
+                                    <li>
+                                        <a href="#"><img class="active" src="assets/images/2.jpg" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img class="normal" src="assets/images/7.jpg" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img class="normal" src="assets/images/9.jpg" alt="" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 product-body">
+                            <div class="product-title">
+                                <span><a href="#">Black Cotton Leggings</a></span>
+                            </div>
+                            <div class="product-rate pt-10">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star "></i>
+                                <i class="far fa-star "></i>
+                                <span>3 Ratting(s)</span>
+                            </div>
+
+                            <div class="product-price pt-30 pt-sm-20 pb-30 pb-sm-20">
+                                <span><i class="fas fa-pound-sign"></i>160.00</span>
+                            </div>
+
+                            <div class="product-description">
+                                <span>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</span>
+                            </div>
+
+                            <div class="product-list-actions pt-20 pt-sm-15 pb-20 pt-sm-15 pb-sm-15">
+                                <form action="#">
+
+                                    <div class="form-group">
+                                        <label for="p_size">Size *</label>
+                                        <select name="p_size" id="p_size" class="form-control">
+                                        <option value="">- Please Select -</option>
+                                        <option value="">XL</option>
+                                        <option value="">L</option>
+                                        <option value="">M</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="p_color">Color *</label>
+                                        <select name="p_color" id="p_color" class="form-control">
+                                        <option value="">- Please Select -</option>
+                                        <option value="">Blue</option>
+                                        <option value="">Red</option>
+                                        <option value="">Green</option>
+                                        <option value="">Yellow</option>
+                                    </select>
+                                    </div>
+
+                                </form>
+                                <!-- /.form -->
+
+                                <div class="required-alert pt-10 pt-sm-5 pb-10 pb-sm-5">
+                                    <span>Required Fields *</span>
+                                </div>
+
+                                <div class="product-quantity">
+                                    <span>Quanty:</span>
+                                    <div class="quantity">
+                                        <input type="text" value="07" class="quantity-number" />
+                                    </div>
+                                </div>
+                                <!-- /.product-actions -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model end -->
+
+
+
+    <!-- model start  -->
+    <div class="modal fade" id="UserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i> &nbsp;
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+            <input type="email" id="defaultForm-email" class="form-control validate">  
+          </div>
+  
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i> &nbsp;
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+         <a href="productlist.html"><button class="btn btn-primary">Login</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- model end -->
+
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.banner-slick').slick({
+                dots: false,
+                arrows: true,
+                auto: true,
+                infinite: true,
+                swipe: true,
+                speed: 1500,
+                currentSlide: 0,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        auto: true
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        auto: true
+                    }
+                }]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.product-carousel').slick({
+                dots: false,
+                infinite: true,
+                arrows: true,
+                auto: true,
+                swipe: true,
+                speed: 1500,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.blog-carousel').slick({
+                arrows: true,
+                infinite: true,
+                //autoplay: 3000,
+                swipe: true,
+                speed: 1500,
+                currentSlide: 0,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.testimonial-slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                autoplay: 6000,
+                swipe: true,
+                speed: 1500,
+                currentSlide: 0,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.clients').slick({
+                dots: false,
+                infinite: true,
+                swipe: true,
+                arrows:false,
+                autoplay: 3000,
+                speed: 1500,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+        });
+    </script>
+</body>
+
+</html>

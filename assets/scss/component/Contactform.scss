@@ -1,0 +1,125 @@
+.contact{
+
+    .padding-top-100{
+
+        padding-top: 100px;
+    }
+    
+    .padding-bottom-75{
+    
+        padding-bottom: 75px;
+    }
+
+    .col-md-offset-1{
+
+        margin-left: 8.33333333%;
+    }   
+    h6 {
+        color: #9d9d9d;
+        font-weight: 500;
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    h2{
+
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        line-height: 1.6em;
+        color:#606060;
+        font-weight: 500;
+        font-family: 'Droid Serif', serif;
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+
+
+        label {
+            font-weight: 600;
+            text-transform: capitalize;
+            margin: 15px 0;
+            color:#333333;
+            font-family: 'Droid Serif', serif;
+            font-style: italic;
+
+            &:after {
+                content: '*';
+                color: #d74c4c;
+                margin-left: 3px;
+            }
+        }
+
+        input {
+            height: 40px;
+            border-radius: 0;
+            border: 1px solid#e3e3e3;
+            box-shadow: none;
+        }
+
+        textarea {
+            height: 170px;
+        }
+    }
+
+    .btn-form {
+        width: 100%;
+        border: 2px solid #8a8f6a;
+        background:#8a8f6a;
+        font-size: 12px;
+        color: #fff;
+        padding: 14px 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &:hover{
+
+            color: #fff;
+            background-color: #333333;
+        }
+    }
+
+    .contact-map{
+
+        #google-map{
+
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+    .contact-info {
+        
+        .row {
+            margin-top: -75px;
+            background: #fff;
+            position: relative;
+        }
+
+        img{
+
+            max-width: 100%;
+        }
+
+        h4 {
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 1.8em;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.6em;
+            color:#606060;
+            font-weight: 500;
+            font-family: 'Droid Serif', serif;
+            font-style: italic;
+        }
+    }
+}

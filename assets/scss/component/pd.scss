@@ -1,0 +1,379 @@
+#p-details{
+
+    margin-top: 70px;
+
+
+    .product-image{
+
+        .product-quickview-slider{
+
+            padding-top: 10px;
+       
+            ul{
+       
+                margin-top: 20px;
+                
+                li{
+
+                    a{
+
+                        img{
+
+                            width: 100%;
+                            height: 182px;
+                            display: block;
+                            opacity: .7;
+                            cursor: pointer;
+                            transition: all 0.1s ease;
+                            padding: 25px 34px;
+
+
+                            @include screen(md, max){
+
+                                padding: 8px 25px;
+                                width: 100%;
+                                height: 100px;
+                            }
+                            
+                            &:hover{
+
+                                opacity: 1;
+                                cursor: default;
+                                border: 2px solid #8a8f6a;
+                            }
+
+                            &.active{
+
+                                opacity: 1;
+                                cursor: default;
+                                border: 1px solid #8a8f6a;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+
+    .product-details{
+
+        .product-title{
+
+            span{
+
+                color: #1f1f1f;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            a {
+                color: #222;
+                line-height: 2.5em;
+                font-weight: bold;
+            }
+        }
+
+        .product-reviews{
+
+            li {
+                list-style: none;
+                display: inline-block;
+                font-size: 17px;
+
+                &::after {
+                    content: '|';
+                    margin: 0 20px;
+                    color: #e1e1e1;
+
+                    @include screen(md, max){
+
+                        margin: 0;
+                    }
+                }
+
+                &:last-child::after{
+
+                    content: none;
+                }
+
+
+                a{
+
+                    color: #606060;
+                    font-family: 'Droid Serif', serif;
+                    font-style: italic;
+                }
+            }
+
+            .product-rate{
+
+                span{
+                    margin-left: 0;
+                    color: #555555;
+                    font-family: 'Droid Serif', serif;
+                    font-style: italic;
+                }
+            }   
+        }
+
+        .product-small-detail{
+
+            span{
+                color: #606060;
+                font-size: 17px;
+                line-height: 1.6em;
+                font-family: 'Droid Serif', serif;
+                font-style: italic;
+            }
+        }
+
+        .product-price{
+
+            font-size: 17px;
+            font-family: 'texgyreadventorbold';
+
+            span{
+
+                display: inline-block;
+                margin: 0 5px;
+                font-weight: bold;
+            }
+
+            del {
+                color: #b3b3b3;
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+
+        .product-list-actions {
+
+            border-top: 1px solid #e1e1e1;
+
+            .form-group{
+
+                margin-bottom: 15px;
+
+                label{
+
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                    color: #333333;
+                    font-family: 'Droid Serif', serif;
+                    font-style: italic;
+                    font-size: 17px;
+                    margin: 7px 0;
+                }
+
+                .form-control{
+
+                    color: #888888;
+                    border-radius: 0;
+                    box-shadow: none;
+                    font-size: 17px;
+                    width: 100%;
+                    height: 45px;
+                    cursor: pointer;
+                    font-family: 'Droid Serif', serif;
+                    font-style: italic;
+                }
+            }
+
+            .product-quantity{
+
+                display: inline-block;
+
+                .quantity{
+                    
+                    margin: 0;
+                    border: 1px solid #e1e1e1;
+                    display: inline-block;
+                }
+
+                .minus{
+
+                    border: none;
+                    background: transparent;
+                    margin: 0px -4px;
+                    padding: 5px 12px;
+                    font-size: 18px;
+                }
+
+                .quantity-number {
+                    max-width: 40px;
+                    text-align: center;
+                    border: none;
+                    padding: 9px 5px;
+                }
+
+                .plus {
+                    border: none;
+                    background: transparent;
+                    margin: 0px -4px;
+                    padding: 5px 12px;
+                    font-size: 18px;
+                }
+            }
+
+            .product-cart{
+
+                display: inline-block;
+                z-index: 1;
+                position: absolute;
+                width: 230px;
+                height: 43px;
+                text-align: center;
+                background: #8a8f6a;
+                color: #fff;
+
+                a{
+
+                    display: inline-block;
+                }
+
+                span{
+                        float: left;
+                        padding-top: 12px;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: #fff;
+                }
+
+                .product-icons{
+
+                    float: right;
+                    display: grid;
+
+                    ul {
+                        display: inline-flex;
+                        background: #282828;
+                        list-style: none;
+
+                        li{
+                        
+                            a {
+                                display: inline-block;
+                                padding: 13px 12px;
+                                color: #b7b7b7;
+                                height: 43px;
+
+                                &:hover{
+
+                                    color: #fff;
+                                    background-color: #b7b7b7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social-share{
+
+                span{
+
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                    color: #333333;
+                    font-family: 'Droid Serif', serif;
+                    font-style: italic;
+                    font-size: 17px;
+                }
+
+                .share {
+                    border: 1px solid #e1e1e1;
+                    width: 195px;
+                    padding: 15px 20px;
+
+                    a {
+                        display: inline-block;
+                        color: #1f1f1f;
+
+                        &::after {
+                            content: '';
+                            border-right: 1px solid #e1e1e1;
+                            margin: 0 15px;
+                        }
+
+                        &:last-child::after{
+
+                            content: none;
+                        }
+
+                        &:hover{
+
+                            color: #8a8f6a;
+                        }
+                    }
+                }
+            }
+
+            .product-category-tag{
+
+                font-family: 'Droid Serif', serif;
+                font-style: italic;
+                font-size: 17px;
+
+
+                .p-categories{
+
+                    span{
+
+                        color: #888888;
+                        display: inline-block;
+                    }
+
+                    ul{
+
+                        display: inline-block;
+
+                        li{
+
+                            display: inline-block;
+                            list-style: none;
+
+                            &::after {
+                                content: ',';
+                            }
+
+                            &:last-child::after{
+
+                                content: '.';
+                            }
+
+                            a{
+
+                                color: #333333;
+
+                                &:hover{
+
+                                    color: #8a8f6a;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .p-tags{
+
+                    span{
+                        color: #888888;
+                        display: inline-block;
+                    }
+
+                    a{
+
+                        color: #333333;
+                        display: inline-block;
+
+                        &:hover{
+
+                            color: #8a8f6a;
+                        }
+                    }
+                }
+            }
+        }      
+    }
+}

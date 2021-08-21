@@ -1,0 +1,16 @@
+
+header {
+	.mobile-nav-bg {
+		position: fixed;
+		left: 280px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		background: rgba(0,0,0,0.5);
+		z-index: 100;
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}

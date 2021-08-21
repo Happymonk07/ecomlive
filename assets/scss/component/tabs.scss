@@ -1,0 +1,213 @@
+.tabs{
+
+    margin-top: 60px;
+    width: 100%;
+    display: inline-block;
+
+
+    .tab-links {
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+
+
+        &::after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        li {
+            padding: 20px 40px;
+            display: inline-block;
+            list-style: none;
+
+
+            &.active{
+
+                &::after {
+                    content: '';
+                    border-bottom: 2px solid #8a8f6a;
+                    width: 100%;
+                    position: relative;
+                    display: block;
+                    top: 20px;
+                }
+
+                a{
+
+                    color: #8a8f6a;
+                }
+            }
+        }
+
+        a{
+
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all linear 0.15s;
+            border-radius: 0px;
+            color: #333333;
+        }
+    }
+
+    .tab-content{
+
+        color: #606060;
+        font-family: 'Droid Serif', serif;
+        font-style: italic;
+
+        #tab1{
+
+            display: block;
+        }
+
+        #tab2{
+
+            display: none;
+        }
+
+        #tab3{
+
+            display: none;
+
+                .customer-comment-box{
+
+                    margin: 20px 10px;
+                    padding: 20px 10px;
+                    width: auto;
+                    background: #ffffff;
+                    border: 1px solid #d6d6d6;
+
+                    .customer-comment{
+
+                        margin: 0;
+                        padding: 0;
+
+                        .customer-comment-name{
+
+                            margin: 0 0 5px;
+                            font-size: 20px;
+                            width: 100%;
+                            font-family: 'Droid Serif', serif;
+                            font-weight: 400;
+                            color: #5B5B5B;
+                            letter-spacing: 3px;
+                            overflow: hidden;
+                            word-wrap: break-word;
+                        }
+
+                        .customer-comment-verified {
+                            margin: 0 0 5px;
+                            padding: 0;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #962231;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    .customer-comment-box-outer {
+                        border-left: 1px solid #d6d6d6;
+                        display: table;
+
+                            @include screen(md, max){
+
+                                border-left: none;
+                            }
+                            .customer-ratings{
+
+                                padding: 10px 0;
+
+                                .customer-comment-reviews {
+                                    display: inline-block;
+                                    margin-right: 10px;
+
+                                    span {
+                                        margin: 0;
+                                        padding: 2px 0 0;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .date {
+                                    font-size: 12px;
+                                    display: inline-block;
+                                }
+                            }
+
+                            .customer-comment-box1 {
+                                margin: 0;
+                                padding: 10px 0 20px;
+                                font-family:'Droid Serif', serif;
+                                line-height: 26px;
+                                letter-spacing: 3px;
+                            }
+
+                            .customer-comment-text {
+                                line-height: 30px;
+
+                                a {
+                                    display: inline-block;
+                                    margin: 0 4px;
+                                    font-size: 14px;
+                                    color: #333333;
+                                    font-family: 'Droid Serif', serif !important;
+
+                                    &:hover{
+
+                                        color: #8a8f6a;
+                                    }
+                                }
+                            }
+
+                    } 
+                }
+        }
+
+        .tab-description{
+
+            span{
+
+                line-height: 1.8em;
+                font-size: 17px;
+                display: inline-block;
+
+
+                @include screen(md, max){
+
+                    padding-bottom: 0;
+                }
+            }
+
+            img {
+                float: left;
+                margin-right: 30px;
+                
+
+                @include screen(md, max){
+
+                    margin-bottom: 20px;
+                }
+            }
+    
+            ul {
+                padding: 0;
+                margin-top: 20px;
+                list-style: inside;
+
+                @include screen(md, max){
+
+                    list-style: none;
+                }
+
+                li {
+                    margin: 25px 0;
+                    color: #555555;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

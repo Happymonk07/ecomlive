@@ -1,0 +1,103 @@
+.best-seller {
+    .container {
+        .product-categories {
+            .filter-title {
+                font-size: 16px;
+                font-weight: $fw-bold;
+                text-transform: uppercase;
+                border-bottom: 2px solid #e1e1e1;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .product-categories-list {
+                ul {
+                    li {
+                        label {
+                            display: inline-flex;
+                            line-height: 12px;
+                            span {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .color-list {
+            display: flex;
+            ul {
+                li {
+                    max-width: 30px;
+                    margin: 2px;
+                    padding: 1px;
+                    border: 1px solid $color-primary;
+                    float: left;
+                    display: inline-block;
+                    &:hover {
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+        .product-item-list {
+            .page-list
+             a {
+                color: $color-primary;
+                font-weight: $fw-semibold;
+                float: left;
+                padding: 0.5rem 0.75rem;
+                background: #ececec;
+                display: inline-block;
+                margin-right: 5px;
+                
+                &.active {
+                    color: $color-black;
+                }
+                &:hover {
+                    color: $color-black;
+                }
+            }
+            ul {
+                li {
+                    .form-group {
+                        margin: 0;
+                        .form-control {
+                            color: $color-primary;
+                            float: left;
+                            width: 21%;
+                            margin-left: 34%;
+                            font-weight: $fw-semibold;
+                            overflow: hidden;
+                            text-transform: uppercase;
+                            background: #ececec;
+                            border-radius: 0;
+                            box-shadow: none;
+                            cursor: pointer;
+                            &:hover {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+            .pagination {
+                .page-link {
+                    color: $color-primary;
+                    background: #ececec;
+                    font-weight: $fw-semibold;
+                    border-radius: 0%;
+                    border: 1px solid #dee2e6;
+                    &.active {
+                        color: #ececec;
+                        background: $color-primary;
+                    }
+                    &:hover {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+        //product-item-list
+    }
+    //container
+}

@@ -1,0 +1,135 @@
+@import 'typography';
+
+.body-main {
+	.boxed {max-width:$container-main;}	
+}
+
+.container {
+    width: 100%;
+	max-width:$container-main;
+}
+
+.max-1600 {max-width:1600px;}
+.max-1800 {max-width:1800px;}
+.max-2000 {max-width:2000px;}
+
+body {
+    font-family: $font-poppins;
+    font-size: $font-size;
+    color: #222;
+    background-color: $color-white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+img{
+    max-width:100%;
+}
+
+a, a:hover, a:focus, button {
+    text-decoration: none;
+}
+
+ul{
+   margin:0;
+   padding:0;
+   list-style-type: none;
+}  
+    				
+.double-line{
+		display: inline-block;
+		position: relative;
+		@include screen (sm, max) {
+			            padding-top:20px;
+			               }
+		@include screen (xs, max) {
+			            padding-top:20px;
+			               }				   		
+&:before {
+		    content: "";
+			position: absolute;
+			height: 5px;
+			border-bottom: 1px solid #e2e2e2;
+			border-top: 1px solid #e2e2e2;
+			top: 4px;
+			width: 120px;
+			right: 100%;
+			margin-right: 65px;
+			@include screen (sm, max) {
+			                 margin-right: 45px;
+							 width: 80px;
+							 top:24px;
+			               }
+		    @include screen (xs, max) {
+			                 margin-right: 35px;
+							 width: 70px;
+							 top:20px;
+			               }				   
+		}
+&:after {
+			content: "";
+			position: absolute;
+			height: 5px;
+			border-bottom: 1px solid #e2e2e2;
+			border-top: 1px solid #e2e2e2;
+			top: 4px;
+			width: 120px;
+			left: 100%;
+			margin-left: 65px;
+			@include screen (sm, max) {
+			                 margin-left: 45px;
+							 width: 80px;
+							 top:24px;
+			               }
+		     @include screen (xs, max) {
+			                 margin-right: 35px;
+							 width: 70px;
+							 top:20px;
+			               }					   
+	   } 
+	  }
+.sub-title {
+			font-family: $font-Droid;
+			font-style: $italic;
+			font-size: 15px;
+			color: #606060;
+			line-height: 1.5em;
+			display:block;
+	  } 
+.main-title{
+			font-size: $fontsize-6;
+			font-weight: $fw-bold;
+			text-transform: uppercase;
+    		line-height: 0.65em;
+			@include screen (sm, max) {
+			                 font-size: $fontsize-7;
+			               }
+}	
+
+.fa-search{
+    color:$color-black;
+	&:hover{
+	color:$color-primary;
+	}
+  }
+  
+.fa-shopping-bag{
+    color:$color-black;
+	&:hover{
+	color:$color-primary;
+	}
+  }     
+  
+.add-to-cart {
+    text-transform: uppercase;
+    background-color: $color-primary;
+    padding: 12px 30px;
+    color: $color-white;
+    font-weight: $fw-normal-2;
+    border: $border-2 $color-primary;
+	&:hover{
+	    	 background-color: transparent;
+   			 color: $color-primary;
+	}
+}  

@@ -1,0 +1,52 @@
+.testimonial-slider{
+
+    .slick-dots {
+             
+                 bottom: -20px;
+                 left: 25px;
+                 
+             li {
+                 position: relative;
+                 display: inline-block;
+                 height: 10px;
+                 width: 20px;
+                 margin: 0 5px;
+                 padding: 0;
+                 right: 20px;
+                 cursor: pointer;
+          button {
+                 border: $border $color-white;
+                 border-radius: 50%;
+                 background: transparent;
+                 display: block;
+                 height: 10px;
+                 width: 10px;
+                 line-height: 0px;
+                 font-size: 0px;
+                 color: $color-white;
+                 padding: 5px;
+                 cursor: pointer;
+                 &:hover, &:focus {
+                     outline: none;
+                     &:before {
+                        //  opacity: $slick-opacity-on-hover;
+                     }
+                   }
+                 &:before {
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                    //  content: $slick-dot-character;
+                     width: 20px;
+                     height: 20px;
+                   }
+                }
+     &.slick-active button:before {
+         color: $color-white;
+         width: 20px;
+         height: 20px;
+        //  opacity: $slick-opacity-default;
+     }
+ }
+}
+}

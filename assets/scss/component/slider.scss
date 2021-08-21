@@ -1,0 +1,398 @@
+#carousel
+{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+
+    .banner-slick 
+    {
+        padding:0;
+
+        li
+        {
+            &.slide1
+            {
+                background-image: url("../images/img1.png");
+                background-size:cover;
+                height:100vh;                
+                width: 100%;
+                float: left;
+                position: relative;
+                opacity: 1;
+                display: block;
+                z-index: 2;
+
+                .slider-caption {
+                    position: absolute;
+                    left:12%;
+                    top:50%;
+                    -o-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    
+
+                    @include screen(md, max){
+
+                        left: 0;
+                        padding: 0 50px;
+                    }
+                }
+
+                .sl-line::after {
+
+                    content: "";
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    top: 290px;
+                    height: 60px;
+                    bottom: 0;
+                    width: 1px;
+                    z-index: -1;
+                    background: #8a8f6a;
+
+                    @include screen(md, max){
+
+                        top: 290px;
+                        height: 30px;
+                    }
+                }
+
+                .sl-line::before {
+
+                    content: "";
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 50%;
+                    top: -40%;
+                    bottom: 0;
+                    height: 60px;
+                    width: 1px;
+                    z-index: -1;
+                    background: #8a8f6a;
+
+                    @include screen(md, max){
+
+                        top: -25%;
+                        height: 30px;         
+                    }
+                }
+                
+                .caption
+                {
+                    text-align: center;
+            
+                        .small-heading{
+                        
+                                color:#8a8f6a;
+                                font-size: 26px;
+                                font-weight: bold;
+                                font-family: 'texgyreadventorbold';
+
+                                @include screen(md, max){
+
+                                    font-size: 18px;
+                                }
+                        }
+
+                        .big-heading{
+                        
+                            color:#222;
+                            font-size: 56px;
+                            font-weight: bold;
+                            font-family: 'texgyreadventorbold';
+                            line-height: 0.8em;
+                            margin-bottom: 30px;
+                            margin-top: 20px;
+                            text-transform: uppercase;
+
+                            @include screen(md, max){
+                                
+                                font-size: 32px;
+                                line-height: 1em;
+                            }
+                        }
+
+                        span{
+                            font-size: 14px;
+                            line-height: 1.7em;
+                            width: 410px;
+                            margin: 0 auto;
+                            font-family: 'Droid Serif', serif;
+                            font-style: italic;
+                            color: #222222;
+                            display: block;
+
+                            @include screen(md, max){
+
+                                width: 100%;
+                            }
+                        }
+
+                        .button
+                        {
+
+                            border: 1px solid#222;
+                            color:#222;
+                            text-transform: uppercase;
+                            font-size: 10px;
+                            font-weight: 700;
+                            display: inline-block;
+                            padding: 7px 20px;
+
+                            &:hover{
+
+                                background-color: #222;
+                                color: white;
+                            }
+
+                            &.margin-top-30 {
+                                margin-top: 30px !important;
+                            }
+                        }
+                }
+            }
+        }
+
+        
+        li
+        {
+            &.slide2
+            {
+                background-image: url("../images/img2.png");
+                background-size:cover;
+                height:100vh;                
+                width: 100%;
+                float: left;
+                position: relative;
+                opacity: 1;
+                display: block;
+                z-index: 2;
+
+                .slider-caption {
+                    position: absolute;
+                    z-index: 30;
+                    left: 50%;
+                    top: 42%;
+                    margin-left: -225px;
+
+                    @include screen(md, max){
+
+                        left: 0;
+                        width: 250px;
+                        margin-left: 0px;
+                        margin: 0 auto;
+                        position: relative;
+                        padding: 0 50px;
+                    }
+                }
+
+                .sl-line::after {
+
+                    content: "";
+                    position: absolute;
+                    left: 28%;
+                    top: 110%;
+                    height: 55px;
+                    bottom: 0;
+                    width: 200px;
+                    z-index: -1;
+                    background-image: url(../images/box.png);
+
+
+                    @include screen(md, max){
+                       margin-left: -45px;
+                    }
+                }
+
+                .sl-line::before{
+
+                    content: "";
+                    position: absolute;
+                    left: 28%;
+                    top: -37%;
+                    height: 55px;
+                    bottom: 0;
+                    width: 200px;
+                    z-index: -1;
+                    background-image: url(../images/box1.png);
+
+                    @include screen(md, max){
+                        margin-left: -45px;
+                     }
+                }
+            
+                
+                .caption
+                {
+                    text-align: center;
+            
+                        .small-heading{
+                        
+                                color:#8a8f6a;
+                                font-size: 26px;
+                                font-weight: bold;
+                                font-family: 'texgyreadventorbold';
+
+                                @include screen(md, max){
+
+                                    font-size: 18px;
+                                }
+                        }
+
+                        .big-heading{
+                        
+                            color:#222;
+                            font-size: 73px;
+                            font-weight: bold;
+                            font-family: 'texgyreadventorbold';
+                            line-height: 0.8em;
+                            margin-bottom: 30px;
+                            margin-top: 20px;
+                            text-transform: uppercase;
+
+                            @include screen(md, max){
+
+                                font-size: 40px;
+                            }
+                        }
+
+                        span{
+                            font-size: 14px;
+                            line-height: 1.7em;
+                            width: 410px;
+                            margin: 0 auto;
+                            font-family: 'Droid Serif', serif;
+                            font-style: italic;
+                            color: #222222;
+                            display: block;
+
+                            @include screen(md, max){
+
+                                width: 100%;
+                            }
+                        }
+
+                        .button
+                        {
+
+                            border: 1px solid#222;
+                            color:#222;
+                            text-transform: uppercase;
+                            font-size: 10px;
+                            font-weight: 700;
+                            display: inline-block;
+                            padding: 7px 20px;
+
+                            &:hover{
+
+                                background-color: #222;
+                                color: white;
+                            }
+
+                            &.margin-top-30 {
+                                margin-top: 30px !important;
+                            }
+                        }
+                }
+            }
+        }
+
+        li
+        {
+            &.slide3
+            {
+                background-image: url("../images/img3.jpg");
+                background-size:cover;
+                height:100vh;                
+                width: 100%;
+                float: left;
+                position: relative;
+                opacity: 1;
+                display: block;
+                z-index: 2;
+
+                .slider-caption {
+                    position: absolute;
+                    z-index: 30;
+                    left: 50%;
+                    top: 53%;
+                    margin-left: -425px;
+                    max-width: 850px;
+                    -o-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    
+
+                    @include screen(md, max){
+
+                        left: 0;
+                        margin-left: 0px;
+                        width: 100%;
+                        padding: 0 50px;
+                    }
+                }
+
+                .caption
+                {
+                    text-align: center;
+            
+                        .big-heading{
+                        
+                            color:#222;
+                            font-size: 75px;
+                            line-height: 0.9em;
+                            margin-bottom: 25px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+
+                            @include screen(md, max){
+
+                                font-size: 40px;
+                            }
+                        }
+
+                        span{
+                            font-size: 14px;
+                            line-height: 1.7em;
+                            width: 410px;
+                            margin: 0 auto;
+                            font-family: 'Droid Serif', serif;
+                            font-style: italic;
+                            color: #222222;
+                            display: block;
+
+                            @include screen(md, max){
+
+                                width: 100%;
+                            }
+                        }
+
+                        .button
+                        {
+
+                            border: 1px solid#222;
+                            color:#222;
+                            text-transform: uppercase;
+                            font-size: 10px;
+                            font-weight: 700;
+                            display: inline-block;
+                            padding: 7px 20px;
+
+                            &:hover{
+
+                                background-color: #222;
+                                color: white;
+                            }
+
+                            &.margin-top-30 {
+                                margin-top: 30px !important;
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

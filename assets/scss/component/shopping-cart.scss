@@ -1,0 +1,144 @@
+.cart-table{
+    .container{
+         .table-responsive{
+                  .table{
+                   thead{
+                       tr{ 
+                       th{
+                           text-transform: uppercase;
+                           font-weight: $fw-semibold;
+                           border-top: 0;
+                           white-space: nowrap;
+                           }
+                         }
+                       }
+                   tbody{
+                       tr{ 
+                         td{
+                            padding: 30px 0;
+                            vertical-align: middle;
+                            
+                            .product-name{
+                               font-weight: $fw-semibold;
+                               font-style:$italic;
+                               white-space: nowrap;
+                                }
+                             .product-detail{
+                               font-size: 13px;
+                                 color: #606060;
+                               font-style: $italic;
+                                }
+                             .product-price{
+                               font-size: 15px;
+                               text-transform: uppercase;
+                               line-height: 1.8em;
+                               font-weight: $fw-semibold;
+                                }
+                             .quantity-number {
+                               width: 120px;
+                               padding-top: 10px;
+                               input {
+                               border-radius: 0;
+                               height: 40px;
+                               padding-left: 25px;
+                               border: $border #e1e1e1;
+                                   }
+                              .input-group-btn-vertical {
+                                .btn {
+                                   display: block;
+                                   font-size: 10px;
+                                   font-weight: 500;
+                                   line-height: 1;
+                                   float: none;
+                                   width: 100%;
+                                   max-width: 100%;
+                                   padding: 5px;
+                                   margin-left: -24px;
+                                   position: relative;
+                                   border-radius: 0;
+                                   border: none;
+                                   cursor: pointer;
+                                    }
+                                 }		
+                               }	
+                               .btn-close{
+                                       color: $color-black;
+                                       display: inline-block;
+                                   &:hover{
+                                       color: $color-primary;
+                                       }	
+                                    }
+                           }	
+                      }
+                 }
+                 .bd-bottom{ 
+                        border-bottom:$border #e1e1e1;	   			 
+                       }
+               }
+               //table  
+         }
+       //table-responsive 
+         
+           .btn-form {
+               padding: 14px 25px;
+               color: $color-white;
+               text-transform: uppercase;
+               font-weight: 600;
+               font-size: 12px;
+               border: 2px solid #8a8f6a;
+               background: #8a8f6a;
+               &:hover {
+                   color: $color-white;
+                   border: 2px solid #282828;
+                   background: #282828;
+                      }
+                     }
+           .btn-group{
+               display: inline-block;			  
+           .btn-cart {
+               padding: 14px 25px;
+               color: $color-white;
+               text-transform: uppercase;
+               font-weight: 600;
+               font-size: 12px;
+               border: 2px solid #282828;
+               background: #282828;
+               &:hover {
+                   color: $color-white;
+                   border: 2px solid #8a8f6a;
+                   background: #8a8f6a;
+               }
+           } 
+       }		
+       .shop_measures {
+                           font-weight: 700;
+                           padding-bottom: 5px;
+                           padding-top: 50px;
+                           .cart-title{
+                           font-size: 16px;
+                           line-height: 1.8em;
+                           text-transform: uppercase;
+                           font-weight: 700;
+                           border-bottom: 2px solid #e3e3e3;
+                           padding-bottom: 5px;
+                            
+                           }
+                           .cart-total li {
+                               margin-bottom: 40px;
+                               border-bottom: 1px solid #e3e3e3;
+                               padding-bottom: 10px;
+                               color: #333333;
+                               font-weight: 600;
+                               span {
+                                   float: right;
+                                   font-weight: 300;
+                               &.total-price{
+                                       font-weight: 700;
+                                     }	
+                                  }
+                              }
+                       }	
+    }
+    //container
+   }
+   //cart-table

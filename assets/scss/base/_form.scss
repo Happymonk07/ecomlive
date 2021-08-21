@@ -1,0 +1,82 @@
+@import '../default/variables';
+@import '../default/mixin';
+
+.form-control {
+	border-radius: 0px;
+	border: 1px solid $border-primary;
+	&:focus {
+		box-shadow: none !important;
+		border: 1px solid $border-primary;
+	}
+}
+
+
+/*-- Button --*/
+button {
+	outline: none;
+	&:hover,&:focus {
+		outline: none;
+	}
+}
+.btn {
+	border-radius: 0px;
+}
+.btn-primary {
+	background: $color-primary;
+	border-color: $color-primary;
+	box-shadow: none !important;
+	&:hover, &:focus, &:active, &.active {
+		background: $color-secondary;
+		border-color: $color-secondary;
+		box-shadow: none !important;
+	}
+}
+.btn-secondary {
+	background: $color-secondary;
+	border-color: $color-secondary;
+	box-shadow: none !important;
+	&:hover, &:focus, &:active, &.active {
+		background: $color-primary;
+		border-color: $color-primary;
+		box-shadow: none !important;
+	}
+}
+.btn-outline-primary {
+	border-color: $color-primary;
+	box-shadow: none !important;
+	&:hover, &:focus, &:active, &.active {
+		border-color: $color-secondary;
+		box-shadow: none !important;
+	}
+}
+.btn-outline-secondary {
+	border-color: $color-secondary;
+	box-shadow: none !important;
+	&:hover, &:focus, &:active, &.active {
+		border-color: $color-primary;
+		box-shadow: none !important;
+	}
+}
+
+/*-- Slick --*/
+.slick-prev,.slick-next {
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	color: $color-primary;
+	background: $color-black;
+	&:before {
+		color: $color-white;
+	}
+	&:hover, &:focus, &:hover, &:focus {
+		color: $color-primary;
+		background: #898989;
+	}
+}
+
+.slick-prev {
+	left: 0px;
+}
+.slick-next {
+	right: 0px;
+}
